@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inventário</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body page="lista">
+  <div id="listaRegistro">
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Fabricante</th>
+          <th>Modelo</th>
+          <th>Ano de Fabricação</th>
+          <th>Data de inclusão</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody id="listaRegistroBody"></tbody>
+    </table>
+
+    <div>
+      <button onclick="visualizar('cadastro')">Novo Item</button>
+    </div>
+  </div>
+
+  <form id="cadastroRegistro">
+    <div class="label">
+      <div>ID</div>
+      <div>
+        <input type="number"  readonly id="id">
+      </div>
+
+      <div>Fabricante</div>
+      <div>
+        <input type="text" id="fabricante">
+      </div>
+    </div>
+
+    <div class="label">
+      <div>Modelo</div>
+      <div>
+        <input type="text" id="modelo">
+      </div>
+    </div>
+
+    <div class="label">
+      <div>Ano de Fabricação</div>
+      <div>
+        <input type="text" id="anoFabricacao">
+      </div>
+    </div>
+
+    <div class="label">
+      <div>Data de Inclusão</div>
+      <div>
+        <input type="text" id="dataInclusao">
+      </div>
+    </div>
+    <div>
+      <button onclick="visualizar('cadastro')">SALVAR</button>
+      <button onclick="visualizar('cadastro')" class="cinza" type="button">CANCELAR</button>
+    </div>
+  </form>
+</body>
+
+</html>
